@@ -1,0 +1,102 @@
+body {
+  background-image: url('../img/count-people-app.jpg');
+  background-size: cover;
+  text-align: center;
+  color: #990618;
+  text-shadow: 0px 0px 5px #fff;
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 80%;
+
+}
+
+main {
+  width: 30%;
+  height: 70%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 42px;
+}
+
+
+main::before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .4);
+  filter: blur(10px);
+  margin: -20px;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+}
+
+#count-result {
+  font-size: 5rem;
+  margin: 2rem;
+}
+button {
+  padding: 0.6rem 3rem;
+  margin: 1rem;
+  line-height: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  letter-spacing: 0.15em;
+  font-size: 1.4rem;
+}
+#increment-btn {
+  background-color: #3125a1;
+}
+
+#save-btn {
+  background-color: darkgreen;
+}
+
+#save-el {
+  font-size: 3rem;
+}
+
+@media (max-width: 968.99px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  #count-result {
+    font-size: 4rem;
+  }
+  button {
+    padding: 0.5rem 1.3rem;
+    margin: 0.7rem;
+    line-height: 1rem;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    letter-spacing: 0.15em;
+    font-size: 1rem;
+  }
+  
+  #save-el {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+}
